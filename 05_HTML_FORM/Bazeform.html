@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{list-style-type:none}
+       
+    </style>
+</head>
+<body>
+<h3>Простая форма поиска с вариантами:</h3>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+<fieldset>
+ <legend>Строка поиска</legend>
+ <input type="text" maxlength="10">
+ <label>
+    <input type="submit" value="Искать">
+    </label>
+<br>
+    <label>
+    <input type="radio" name="radio_group" value="value_01" id="gr1">на сайте
+</label>
+<label>
+    <input type="radio" name="radio_group" value="value_02" id="gr2" >в google
+</label>
+    <br>
+    
+<p><em>Длина запроса не более 10 символов</em></p>
+</fieldset>
+<H3>Простая форма поиска с вариантами:</H3>
+<fieldset>
+    <legend>Строка поиска</legend>
+    <input type="text" autofocus placeholder="*">
+    <label>
+        <input type="submit" value="Искать">
+        </label>
+        <br>
+        <label>
+        <input type="radio" name="radio_group2" value="value_01" id="gm1">на сайте
+    </label>
+    <label>
+        <input type="radio" name="radio_group2" value="value_02" id="gm2" >в google
+    </label>
+<pre><em>
+* - обязательное поле
+ Автофокус в поле поиска</em></pre>
+    </fieldset>
+<fieldset>
+    <legend>Простая форма авторизации</legend>
+    
+<input type="text" name="login" id="log" placeholder="*"><label for="login">Логин</label>
+<br>
+<input type="password" name="password" id="log" placeholder="*"><label for="pass">Пароль</label>
+<br>
+<label name="chk"><input type="checkbox" name="log">оставаться в системе</label>
+<br>
+<label id=>
+    <input type="submit" value="войти">
+    </label>
+<p><em>*-обязательно поле</em></p>
+</fieldset>
+<h3>Опрос(голосование):</h3>
+<fieldset>
+    <legend>Как вам?</legend>
+    <ul >
+        <li><input type="checkbox" name="check">ничего</li>
+        <li><input type="checkbox" name="check">неплохо</li>
+        <li><input type="checkbox" name="check">хорошо</li>
+        <li><input type="checkbox" name="check">супер</li>
+    </ul>
+    <input type="submit">
+</fieldset>
+<h3>Отзыв:</h3>
+<fieldset>
+    <legend>Оставьте ваш отзыв</legend>
+<input type="Name" name="nam1" placeholder="*"raquired><label> Имя</label>
+        <br>
+<input type="email" name="email"><label >e-mail</label>
+<br>
+<textarea name="tex_area" id="" cols="30" rows="10">
+    текст по умолчанию
+</textarea>
+<br>
+<input type="submit">
+</fieldset>
+<H3>Выпадающий и мульти списки:
+</H3>
+<fieldset>
+    <legend>Города РБ</legend>
+   <select name="list" id="list">
+    <optgroup label="Города РБ">
+        <OPtion value="1">Брест</OPtion>
+        <OPtion value="2">Минск</OPtion>
+        <OPtion value="3">Витебск</OPtion>
+    </optgroup>
+    <optgroup label="Города России">
+        <option value="4">Москва</option>
+        <option value="5">Москва</option>
+        <option value="6">Москва</option>
+    </optgroup>
+    <label>
+        <input type="submit" value="Ок">
+    </label>
+   </select>
+</fieldset>
+<H3>Загрузка файла на сервер:</H3>
+<Fieldset>
+    <legend>Upload</legend>
+<p>Файл:</p>
+<input type="file" name=":file_field" dir="ltr"> 
+<br>
+<p>Срок хранения</p>
+<input type="date">   
+</Fieldset>
+<h3>Валидация данных HTML5:
+</h3>
+<fieldset>
+    <legend>Строка поиска</legend>
+    <label for="scx"></label>
+        <input type="text" id="scx" name="index1"  pattern="^[а-яА-ЯёЁ]+$">
+   <br>
+        <label for="nom"></label>
+    <input type="text" id="nom" name="tel" pattern="[0-9+]{12,14}" >
+</fieldset>
+</form>
+</body>
+</html>
