@@ -11,7 +11,9 @@
     </style>
 </head>
 <body>
-<h3>Простая форма поиска с вариантами:</h3>
+   <table>
+    <tr>
+        <td><h3>Простая форма поиска с вариантами:</h3>
 <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
 <fieldset>
  <legend>Строка поиска</legend>
@@ -31,8 +33,8 @@
 <p><em>Длина запроса не более 10 символов</em></p>
 </fieldset>
 </form>
-<form action="http://fe.it-academy.by/TestForm.php">
-<H3>Простая форма поиска с вариантами:</H3>
+<form action="http://fe.it-academy.by/TestForm.php"></td>
+        <td><H3>Простая форма поиска с вариантами:</H3>
 <fieldset>
     <legend>Строка поиска</legend>
     <input type="text" autofocus placeholder="*">
@@ -50,8 +52,10 @@
 * - обязательное поле
  Автофокус в поле поиска</em></pre>
     </fieldset>
-</form>
-    <form action="http://fe.it-academy.by/TestForm.php">
+</form></td>
+    </tr>
+    <tr>
+        <td><form action="http://fe.it-academy.by/TestForm.php">
 <fieldset>
     <legend>Простая форма авторизации</legend>
     
@@ -66,8 +70,9 @@
     </label>
 <p><em>*-обязательно поле</em></p>
 </fieldset>
-</form>
-<form action="http://fe.it-academy.by/TestForm.php"></form>
+</form></td>
+
+        <td><form action="http://fe.it-academy.by/TestForm.php">    
 <h3>Опрос(голосование):</h3>
 <fieldset>
     <legend>Как вам?</legend>
@@ -79,8 +84,10 @@
     </ul>
     <input type="submit">
 </fieldset>
-</form>
-<form action="http://fe.it-academy.by/TestForm.php">
+</form></td>
+    </tr>
+    <tr>
+        <td><form action="http://fe.it-academy.by/TestForm.php">
 <h3>Отзыв:</h3>
 <fieldset>
     <legend>Оставьте ваш отзыв</legend>
@@ -94,13 +101,13 @@
 <br>
 <input type="submit">
 </fieldset>
-</form>
-<form action="http://fe.it-academy.by/TestForm.php">
+</form></td>
+        <td><form action="http://fe.it-academy.by/TestForm.php">
 <H3>Выпадающий и мульти списки:
 </H3>
 <fieldset>
     <legend>Города РБ</legend>
-   <select name="list" id="list">
+   <select multiple name="list" id="list" size="6">
     <optgroup label="Города РБ">
         <OPtion value="1">Брест</OPtion>
         <OPtion value="2">Минск</OPtion>
@@ -116,7 +123,10 @@
     </label>
    </select>
 </fieldset>
-</form>
+</form></td>
+    </tr>
+    <tr>
+        <td><H3>Загрузка файла на сервер:</H3>
 <form action="http://fe.it-academy.by/TestForm.php">
 <Fieldset>
     <legend>Upload</legend>
@@ -124,11 +134,12 @@
 <input type="file" name=":file_field" dir="ltr"> 
 <br>
 <p>Срок хранения</p>
-<input type="date">   
+<input type="date">  
+<input type="submit" value="Загрузить"> 
 </Fieldset>
-</form>
-<form action="http://fe.it-academy.by/TestForm.php">
-<H3>Загрузка файла на сервер:</H3>
+</form></td>
+
+<td><form action="http://fe.it-academy.by/TestForm.php">
 <h3>Валидация данных HTML5:
 </h3>
 <fieldset>
@@ -138,7 +149,12 @@
    <br>
         <label for="nom"></label>
     <input type="text" id="nom" name="tel" pattern="[0-9+]{12,14}" >
+    <br>
+    <input type="submit" value="проверить">
+
 </fieldset>
-</form>
+</form></td>
+    </tr>
+   </table>
 </body>
 </html>
