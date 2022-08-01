@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{display: inline;}
+        div.fd{ width: 100px;}
+        div.fd div{background: grey; border: solid black 1px; position: relative; cursor: pointer;}
+        div.sreda {display: none; width: max-content;}
+        div.sreda div{background: grey; border: solid grey 1px; position: relative; cursor: pointer;}
+        div.fd div:hover div.sreda{ display: block; position: absolute;  left: 0%; top: 100%; }
+        .block{ display: block; }
+    
+        @media all and (max-width: 735px) {
+    div{display: block;}
+    div.fd {width: 100px}
+    div.fd div{ background-color: grey; border: solid grey 1px; position: relative; cursor: pointer}
+    div.sreda {width: 150px; display: none;}
+    div.sreda div {background-color: grey; border: solid grey 1px; cursor: pointer}
+    div.fd div:hover div.sreda{display: block; position: absolute; left: 80%; top: 90%; z-index: 1}
+    }
+
+
+    </style>
+</head>
+<body>
+<div class="fd">
+ <div class="sda">Понедельник</div> 
+ <div >Вторник</div>
+ <div>Среда
+ <div class="sreda" >
+    <div class="block">Завтрак</div>
+    <div class="block">Обед</div>
+    <div class="block">Ужин</div>
+</div>
+ </div>
+ <div>Четверг</div>
+ <div>Пятница</div>
+</div>
+</body>
+</html>

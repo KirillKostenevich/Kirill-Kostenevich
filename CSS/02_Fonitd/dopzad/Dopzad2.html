@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    <style>
+        /* контейнер */
+        .container {
+          width: 100%;
+          max-width: 1200px;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+        /* flex-контейнер */
+        .row {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+      
+        /* общие настройки для flex-элементов */
+        .col {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+      
+        /* ширина блоков .col__article и .col__aside по умолчанию */
+        .col__article,
+        .col__aside {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      
+          /* 1/3 от ширины контейнера */
+          .col__aside {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+          }
+
+</style>
+<body>  
+      <header class="container" style=bac>
+        <!-- Шапка страницы -->dfg
+      </header>
+      <main class="container">
+        <div class="row">
+          <article class="col col__article">
+            <!-- Основная часть -->fgd
+          </article>
+          <aside class="col col__aside">
+            <!-- Боковая область -->dfg
+          </aside>
+        </div>
+      </main>
+      <footer class="container">
+        <!-- Футер -->dfgd
+      </footer>
+</body>
+</html>
